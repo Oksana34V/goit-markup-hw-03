@@ -4,6 +4,10 @@ body {
   background-color: #fff;
 }
 
+img {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -11,14 +15,16 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -106,6 +112,10 @@ a {
 /* MAINE */
 .main-title {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  width: 1440px;
+  margin: 0 auto;
 }
 .main-name {
   font-weight: 700;
@@ -114,7 +124,10 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
 }
+/* !щось не правильно з висотою у кнопці у фігмі*/
 .main-button {
   font-weight: 500;
   font-size: 16px;
@@ -122,22 +135,38 @@ a {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  cursor: pointer;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  border-radius: 4px;
+  display: block;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 .main-button:hover,
 .main-button:focus {
   background-color: #404bbf;
 }
 
-.main-button {
-  cursor: pointer;
+/* SECTION SANS H2 DESCRIPTION */
+.description {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
+.description-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .description-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .description-text {
   font-size: 16px;
@@ -145,8 +174,14 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* OUR TEAM */
+
 .team {
   background-color: #f4f4fd;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1440px;
+  margin: 0 auto;
 }
 .team-descr {
   text-transform: capitalize;
@@ -156,10 +191,23 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
-.team-item {
-  background-color: #ffffff;
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  .team-item {
+    background-color: #ffffff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
 }
+.team-img {
+  display: block;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -167,6 +215,8 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
+  padding-top: 32px;
 }
 .team-position {
   font-size: 16px;
@@ -174,7 +224,16 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-bottom: 32px;
 }
+
+/* SECTION WORKS */
+
+.works {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
 .works-text {
   text-transform: capitalize;
   font-weight: 700;
@@ -183,13 +242,16 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
+
 .works-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .works-addition {
   font-size: 16px;
@@ -197,13 +259,19 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-/* FOOTER */
+/* !FOOTER перевірити падінги */
+
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
