@@ -6,6 +6,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -29,6 +31,9 @@ ol {
 
 a {
   text-decoration: none;
+}
+.section {
+  padding: 120px 0;
 }
 
 .container {
@@ -69,6 +74,8 @@ a {
 }
 .footer-logo {
   color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .header-list {
@@ -127,7 +134,7 @@ a {
   max-width: 496px;
   margin: 0 auto;
 }
-/* !щось не правильно з висотою у кнопці у фігмі*/
+
 .main-button {
   font-weight: 500;
   font-size: 16px;
@@ -150,15 +157,29 @@ a {
 }
 
 /* SECTION SANS H2 DESCRIPTION */
-.description {
+/* .description {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
+} */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
 .description-list {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+.description-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 .description-title {
   font-weight: 500;
@@ -178,8 +199,6 @@ a {
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 60px;
-  padding-bottom: 60px;
   width: 1440px;
   margin: 0 auto;
 }
@@ -203,12 +222,16 @@ a {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  width: calc((100% - 24px * 3) / 4);
 }
 
-.team-img {
+/* .team-img {
   display: block;
+} */
+.name-position {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -217,7 +240,6 @@ a {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
-  padding-top: 32px;
 }
 .team-position {
   font-size: 16px;
@@ -225,15 +247,14 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-  padding-bottom: 32px;
 }
 
 /* SECTION WORKS */
 
-.works {
-  padding-top: 60px;
+/* .works {
+  padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 .works-text {
   text-transform: capitalize;
@@ -244,6 +265,15 @@ a {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.works-item {
+  width: calc((100% - 24px * 3) / 3);
 }
 
 .works-container {
@@ -268,7 +298,6 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-/* !FOOTER перевірити падінги */
 
 .footer {
   background-color: #2e2f42;
