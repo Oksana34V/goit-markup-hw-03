@@ -77,7 +77,6 @@ a {
 .footer-logo {
   color: #f4f4fd;
   display: inline-block;
-  margin-bottom: 16px;
 }
 
 .header-list {
@@ -314,4 +313,9 @@ a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.footer .logo {
+  margin-right: 0;
+  padding: 0;
+  padding: 16px 0;
 }
